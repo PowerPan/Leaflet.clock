@@ -13,9 +13,9 @@ L.Control.Clock = L.Control.extend({
 
 function leaflet_control_clock(){
     var time = new Date();
-    var hour = zeit.getHours();
-    var minute = zeit.getMinutes();
-    var second = zeit.getSeconds();
+    var hour = time.getHours();
+    var minute = time.getMinutes();
+    var second = time.getSeconds();
 
     if(hour<10)
         hour = '0' + hour;
